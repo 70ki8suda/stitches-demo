@@ -21,7 +21,6 @@ const MainArea = styled('div', {
 
 const ArticlesArea = styled('div', {
   padding: '30px',
-
   '& .ArticlesArea__list': {
     display: 'flex',
     gap: '20px 20px',
