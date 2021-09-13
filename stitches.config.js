@@ -1,32 +1,11 @@
-import { createStitches } from '@stitches/react'
+import { createStitches } from '@stitches/react';
 
-export const {
-  config,
-  createTheme,
-  css,
-  getCssText,
-  globalCss,
-  styled,
-  theme,
-} = createStitches({
+export const { config, createTheme, css, getCssText, globalCss, styled, theme, keyframes } = createStitches({
   theme: {
     colors: {
-      hiContrast: 'hsl(206,10%,5%)',
-      loContrast: 'white',
-
-      gray100: 'hsl(206,22%,99%)',
-      gray200: 'hsl(206,12%,97%)',
-      gray300: 'hsl(206,11%,92%)',
-      gray400: 'hsl(206,10%,84%)',
-      gray500: 'hsl(206,10%,76%)',
-      gray600: 'hsl(206,10%,44%)',
-
-      purple100: 'hsl(252,100%,99%)',
-      purple200: 'hsl(252,100%,98%)',
-      purple300: 'hsl(252,100%,94%)',
-      purple400: 'hsl(252,75%,84%)',
-      purple500: 'hsl(252,78%,60%)',
-      purple600: 'hsl(252,80%,53%)',
+      textBlack: '#0b0d0e',
+      grayBorder: '#F3F3F4',
+      accentBlue1: '#3B86CB',
     },
     space: {
       1: '5px',
@@ -51,6 +30,8 @@ export const {
       4: '17px',
       5: '19px',
       6: '21px',
+      7: '24px',
+      titleSize: '30px',
     },
     fonts: {
       system: 'system-ui',
@@ -75,7 +56,7 @@ export const {
     }),
   },
   media: {
-    bp1: '(min-width: 520px)',
-    bp2: '(min-width: 900px)',
+    sp: '(max-width: 959px)',
+    pc: '(min-width: 960px)',
   },
-})
+});
